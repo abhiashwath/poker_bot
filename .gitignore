@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Large training artifacts (regenerate with poker_bot/train.py)
+poker_bot/models/nlhe9_checkpoint.pkl
+poker_bot/models/snapshots/
