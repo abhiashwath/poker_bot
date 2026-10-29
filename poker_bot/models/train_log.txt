@@ -1,0 +1,131 @@
+Training to 10,000,000 iterations with 12 workers...
+  iter    24,000  |    12758 it/s  |  infosets    64,127  |    0.0 min
+  snapshot saved: models/snapshots/policy_iter_100000.pkl
+  iter   288,000  |    16823 it/s  |  infosets   127,719  |    0.3 min
+  iter   528,000  |    16360 it/s  |  infosets   147,751  |    0.5 min
+  iter   744,000  |    15554 it/s  |  infosets   158,910  |    0.8 min
+  iter   936,000  |    14627 it/s  |  infosets   166,503  |    1.1 min
+  snapshot saved: models/snapshots/policy_iter_1000000.pkl
+  iter 1,104,000  |    13878 it/s  |  infosets   171,426  |    1.3 min
+  iter 1,296,000  |    13415 it/s  |  infosets   176,040  |    1.6 min
+  iter 1,464,000  |    13103 it/s  |  infosets   179,383  |    1.9 min
+  iter 1,632,000  |    12757 it/s  |  infosets   182,324  |    2.1 min
+  iter 1,800,000  |    12461 it/s  |  infosets   185,067  |    2.4 min
+  iter 1,968,000  |    12167 it/s  |  infosets   187,497  |    2.7 min
+  eval @ 2,016,000 iterations:
+  vs 8x Random                     +7649.1 mbb/hand  (±4497.1)
+  vs 8x CallingStation             -1426.9 mbb/hand  (±5450.5)
+  vs 8x Maniac                      -167.6 mbb/hand  (±5453.6)
+  vs 8x TightHeuristic             -3645.4 mbb/hand  (±1907.4)
+  vs mixed table (2 of each)       +5404.6 mbb/hand  (±5624.5)
+  infoset coverage: 87.5% of decisions found in policy
+  iter 2,112,000  |    11812 it/s  |  infosets   189,302  |    3.0 min
+  iter 2,256,000  |    11633 it/s  |  infosets   190,955  |    3.2 min
+  iter 2,400,000  |    11447 it/s  |  infosets   192,641  |    3.5 min
+  iter 2,544,000  |    11216 it/s  |  infosets   194,135  |    3.8 min
+  iter 2,688,000  |    11026 it/s  |  infosets   195,510  |    4.1 min
+  iter 2,832,000  |    10831 it/s  |  infosets   196,771  |    4.4 min
+  iter 2,952,000  |    10677 it/s  |  infosets   197,785  |    4.6 min
+  iter 3,072,000  |    10519 it/s  |  infosets   198,683  |    4.9 min
+  iter 3,192,000  |    10374 it/s  |  infosets   199,504  |    5.1 min
+  iter 3,312,000  |    10228 it/s  |  infosets   200,389  |    5.4 min
+  iter 3,432,000  |    10086 it/s  |  infosets   201,154  |    5.7 min
+  iter 3,552,000  |     9943 it/s  |  infosets   201,972  |    6.0 min
+  iter 3,672,000  |     9805 it/s  |  infosets   202,782  |    6.2 min
+  iter 3,792,000  |     9679 it/s  |  infosets   203,557  |    6.5 min
+  iter 3,912,000  |     9553 it/s  |  infosets   204,292  |    6.8 min
+  eval @ 4,008,000 iterations:
+  vs 8x Random                     +4920.4 mbb/hand  (±4232.3)
+  vs 8x CallingStation             -4351.9 mbb/hand  (±5479.6)
+  vs 8x Maniac                     -4010.2 mbb/hand  (±5625.1)
+  vs 8x TightHeuristic             -1882.4 mbb/hand  (±1642.7)
+  vs mixed table (2 of each)       +6245.4 mbb/hand  (±4784.3)
+  infoset coverage: 91.6% of decisions found in policy
+  iter 4,032,000  |     9390 it/s  |  infosets   205,028  |    7.2 min
+  iter 4,152,000  |     9275 it/s  |  infosets   205,709  |    7.5 min
+  iter 4,272,000  |     9165 it/s  |  infosets   206,306  |    7.8 min
+  iter 4,392,000  |     9061 it/s  |  infosets   206,868  |    8.1 min
+  iter 4,512,000  |     8968 it/s  |  infosets   207,364  |    8.4 min
+  iter 4,608,000  |     8889 it/s  |  infosets   207,806  |    8.6 min
+  iter 4,704,000  |     8818 it/s  |  infosets   208,140  |    8.9 min
+  iter 4,800,000  |     8746 it/s  |  infosets   208,509  |    9.1 min
+  iter 4,896,000  |     8676 it/s  |  infosets   208,903  |    9.4 min
+  iter 4,992,000  |     8611 it/s  |  infosets   209,271  |    9.7 min
+  iter 5,088,000  |     8550 it/s  |  infosets   209,641  |    9.9 min
+  iter 5,184,000  |     8493 it/s  |  infosets   209,981  |   10.2 min
+  iter 5,280,000  |     8426 it/s  |  infosets   210,346  |   10.4 min
+  iter 5,376,000  |     8362 it/s  |  infosets   210,662  |   10.7 min
+  iter 5,472,000  |     8306 it/s  |  infosets   210,960  |   11.0 min
+  iter 5,568,000  |     8245 it/s  |  infosets   211,298  |   11.3 min
+  iter 5,664,000  |     8188 it/s  |  infosets   211,585  |   11.5 min
+  iter 5,760,000  |     8127 it/s  |  infosets   211,855  |   11.8 min
+  iter 5,856,000  |     8061 it/s  |  infosets   212,128  |   12.1 min
+  iter 5,952,000  |     8005 it/s  |  infosets   212,393  |   12.4 min
+  eval @ 6,000,000 iterations:
+  vs 8x Random                     +7950.0 mbb/hand  (±3981.1)
+  vs 8x CallingStation             -1673.1 mbb/hand  (±5366.5)
+  vs 8x Maniac                     +1688.0 mbb/hand  (±5246.1)
+  vs 8x TightHeuristic             -2275.9 mbb/hand  (±1222.1)
+  vs mixed table (2 of each)       -1121.3 mbb/hand  (±4215.4)
+  infoset coverage: 92.4% of decisions found in policy
+  iter 6,048,000  |     7930 it/s  |  infosets   212,667  |   12.7 min
+  iter 6,144,000  |     7879 it/s  |  infosets   212,893  |   13.0 min
+  iter 6,240,000  |     7834 it/s  |  infosets   213,099  |   13.3 min
+  iter 6,336,000  |     7789 it/s  |  infosets   213,274  |   13.6 min
+  iter 6,432,000  |     7742 it/s  |  infosets   213,484  |   13.8 min
+  iter 6,528,000  |     7695 it/s  |  infosets   213,695  |   14.1 min
+  iter 6,624,000  |     7652 it/s  |  infosets   213,882  |   14.4 min
+  iter 6,720,000  |     7606 it/s  |  infosets   214,100  |   14.7 min
+  iter 6,816,000  |     7565 it/s  |  infosets   214,294  |   15.0 min
+  iter 6,912,000  |     7524 it/s  |  infosets   214,464  |   15.3 min
+  iter 7,008,000  |     7486 it/s  |  infosets   214,617  |   15.6 min
+  iter 7,104,000  |     7444 it/s  |  infosets   214,771  |   15.9 min
+  iter 7,200,000  |     7404 it/s  |  infosets   214,953  |   16.2 min
+  iter 7,296,000  |     7363 it/s  |  infosets   215,090  |   16.5 min
+  iter 7,392,000  |     7324 it/s  |  infosets   215,275  |   16.8 min
+  iter 7,488,000  |     7289 it/s  |  infosets   215,432  |   17.1 min
+  iter 7,584,000  |     7252 it/s  |  infosets   215,569  |   17.4 min
+  iter 7,680,000  |     7216 it/s  |  infosets   215,690  |   17.7 min
+  iter 7,776,000  |     7183 it/s  |  infosets   215,804  |   18.0 min
+  iter 7,872,000  |     7150 it/s  |  infosets   215,951  |   18.4 min
+  iter 7,968,000  |     7117 it/s  |  infosets   216,069  |   18.7 min
+  eval @ 8,016,000 iterations:
+  vs 8x Random                     +4828.7 mbb/hand  (±3875.5)
+  vs 8x CallingStation              +605.6 mbb/hand  (±5580.0)
+  vs 8x Maniac                     +3964.8 mbb/hand  (±5214.5)
+  vs 8x TightHeuristic             -1751.9 mbb/hand  (±1111.7)
+  vs mixed table (2 of each)       -2097.2 mbb/hand  (±4460.6)
+  infoset coverage: 93.0% of decisions found in policy
+  iter 8,064,000  |     7081 it/s  |  infosets   216,193  |   19.0 min
+  iter 8,160,000  |     7056 it/s  |  infosets   216,312  |   19.3 min
+  iter 8,256,000  |     7036 it/s  |  infosets   216,461  |   19.6 min
+  iter 8,352,000  |     7015 it/s  |  infosets   216,594  |   19.8 min
+  iter 8,448,000  |     6995 it/s  |  infosets   216,696  |   20.1 min
+  iter 8,544,000  |     6973 it/s  |  infosets   216,792  |   20.4 min
+  iter 8,640,000  |     6954 it/s  |  infosets   216,905  |   20.7 min
+  iter 8,736,000  |     6936 it/s  |  infosets   217,009  |   21.0 min
+  iter 8,832,000  |     6918 it/s  |  infosets   217,120  |   21.3 min
+  iter 8,928,000  |     6901 it/s  |  infosets   217,241  |   21.6 min
+  iter 9,024,000  |     6881 it/s  |  infosets   217,352  |   21.9 min
+Resumed from models/nlhe9_checkpoint.pkl at iteration 9,000,000
+Training to 10,000,000 iterations with 12 workers...
+  iter 9,024,000  |     5643 it/s  |  infosets   217,346  |    0.1 min
+  iter 9,120,000  |     5735 it/s  |  infosets   217,443  |    0.3 min
+  iter 9,216,000  |     5688 it/s  |  infosets   217,536  |    0.6 min
+  iter 9,312,000  |     5676 it/s  |  infosets   217,626  |    0.9 min
+  iter 9,408,000  |     5655 it/s  |  infosets   217,720  |    1.2 min
+  iter 9,504,000  |     5640 it/s  |  infosets   217,817  |    1.5 min
+  iter 9,600,000  |     5600 it/s  |  infosets   217,900  |    1.8 min
+  iter 9,696,000  |     5547 it/s  |  infosets   217,987  |    2.1 min
+  iter 9,792,000  |     5516 it/s  |  infosets   218,103  |    2.4 min
+  iter 9,888,000  |     5487 it/s  |  infosets   218,202  |    2.7 min
+  iter 9,984,000  |     5449 it/s  |  infosets   218,277  |    3.0 min
+  iter 10,008,000  |     5436 it/s  |  infosets   218,304  |    3.1 min
+  eval @ 10,008,000 iterations:
+  vs 8x Random                    +12593.7 mbb/hand  (±2804.9)
+  vs 8x CallingStation             +6401.5 mbb/hand  (±3471.3)
+  vs 8x Maniac                      +484.4 mbb/hand  (±3442.0)
+  vs 8x TightHeuristic             -1233.7 mbb/hand  (±701.1)
+  vs mixed table (2 of each)       +3382.2 mbb/hand  (±2962.1)
+  infoset coverage: 100.0% of decisions found in policy
+Done: 10,008,000 iterations in 3.2 min, 214,916 infosets in policy -> models/nlhe9_policy.pkl
