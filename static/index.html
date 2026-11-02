@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poker Trainer</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">&spades;</span>
+    <div>
+      <h1>Poker Trainer</h1>
+      <p class="sub">No-Limit Hold'em &middot; $1/$2 &middot; $100 buy-in (play money) &middot; you vs 8 self-play bots</p>
+    </div>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="top-actions">
+    <button id="rebuyBtn" class="btn ghost" hidden>Rebuy to $100</button>
+    <button id="newSessionBtn" class="btn ghost">New session</button>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="table-area">
+    <div class="table-wrap">
+      <div class="table" id="table">
+        <div class="felt">
+          <div class="center">
+            <div class="board" id="board"></div>
+            <div class="pot" id="pot">Pot $0</div>
+            <div class="street" id="street"></div>
+          </div>
+        </div>
+        <div class="dealer" id="dealer">
+          <div class="dealer-avatar">&#x1F935;</div>
+          <div class="dealer-name">Dealer</div>
+        </div>
+        <div id="seats"></div>
+      </div>
+    </div>
+
+    <div class="message" id="message">Welcome! Press <b>Deal</b> to start your first hand.</div>
+
+    <div class="controls" id="controls">
+      <div class="row" id="actionRow" hidden>
+        <button class="btn fold" id="foldBtn">Fold <kbd>F</kbd></button>
+        <button class="btn call" id="callBtn">Check <kbd>C</kbd></button>
+        <div class="raise-box" id="raiseBox">
+          <div class="presets">
+            <button data-preset="min">Min</button>
+            <button data-preset="half">&frac12; Pot</button>
+            <button data-preset="pot">Pot</button>
+            <button data-preset="max">All-in</button>
+          </div>
+          <div class="slider-row">
+            <input type="range" id="raiseSlider" min="0" max="100" step="1">
+            <span class="dollar">$</span><input type="number" id="raiseInput" min="0">
+          </div>
+          <button class="btn raise" id="raiseBtn">Raise to $0 <kbd>R</kbd></button>
+        </div>
+        <button class="btn hint" id="hintBtn">Hint <kbd>H</kbd></button>
+      </div>
+      <div class="row" id="dealRow">
+        <button class="btn deal" id="dealBtn">Deal next hand <kbd>N</kbd></button>
+        <label class="speed">Bot speed
+          <select id="speed">
+            <option value="1100">Slow</option>
+            <option value="650" selected>Normal</option>
+            <option value="250">Fast</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <aside class="coach">
+    <nav class="tabs">
+      <button class="tab active" data-tab="feedback">Coach</button>
+      <button class="tab" data-tab="history">Hand history</button>
+      <button class="tab" data-tab="learn">Concepts</button>
+    </nav>
+    <div class="tab-panel" id="tab-feedback">
+      <div id="hintCard"></div>
+      <div id="feedback">
+        <div class="empty">
+          <h3>Your coach</h3>
+          <p>After every decision you make, the coach grades it
+            (<span class="v Great">Great</span> <span class="v Good">Good</span>
+            <span class="v Okay">Okay</span> <span class="v Mistake">Mistake</span>)
+            and explains why, using pot odds, equity, position, draws and the nuts.</p>
+          <p>Stuck? Press <b>Hint</b> before you act.</p>
+        </div>
+      </div>
+      <div id="handReview"></div>
+    </div>
+    <div class="tab-panel" id="tab-history" hidden></div>
+    <div class="tab-panel" id="tab-learn" hidden></div>
+  </aside>
+</main>
+
+<div class="toast" id="toast" hidden></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
